@@ -1,0 +1,56 @@
+.nav-cont{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(11, 33, 73);
+    color: white;
+    height: 62px;
+    font-size: 1.25rem;
+    border-bottom: 3px solid red;
+}
+.left-side{
+    display: flex;
+    gap: 0.75rem;
+    padding-left: 30px;
+
+    
+}
+.right-side{
+    display: flex;
+    gap: 0.75rem;
+    padding-right: 30px;
+}
+.middle-side{
+    font-size: 25px;
+}
+
+.left-side .search{
+    width: 100%;
+    height: 2rem;
+}
+.left-side .search .input-box {
+    width: 100%;  
+    padding: 0px 8px;
+    height: 32px;
+    position: relative;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #282828;
+    outline: none;
+    box-shadow: 0px 4px 20px 0px transparent;
+    transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out, 0.1s padding ease-in-out;
+    border-radius: 20px;
+}
+.nav-cont:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}

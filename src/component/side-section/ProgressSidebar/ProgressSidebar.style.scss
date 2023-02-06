@@ -1,0 +1,72 @@
+.progress-sd-cont-main{
+      flex: 3.5;
+   
+    width: 368px;
+   
+    padding: 36px 0px 36px 40px;
+
+    .list-cont{
+        // .course-chlng-cont{
+        //     display: flex;
+        //     text-align: left;
+        //     .set-cont{
+        //         text-align: left;
+        //     }
+        // }
+        .list-header{
+            .header-one{
+                border-bottom: 2px solid  rgba(33, 43, 44, 0.16) ;
+                padding-bottom: 12px ;
+                .nmber-list{
+                    font-family: Lato, "Noto Sans", sans-serif ;
+                    font-weight: 700 ;
+                    font-size: 1.5rem ;
+                    line-height: 24px ;
+                    text-align: left;
+                    color: rgba(33,36,44,0.64);
+                }
+            .master-pnts{
+                font-family: Lato, "Noto Sans", sans-serif ;
+                font-weight: 400 ;
+                font-size: 1rem;
+                line-height: 20px ;
+                color: rgba(33,36,44,0.64);
+                text-align: left;
+            }
+                
+            }
+            .crse-smry{
+                border-bottom: 2px solid  rgba(33, 43, 44, 0.16) ;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 400 ;
+                font-size: 1.25rem;
+                line-height: 20px ;
+                color: rgba(33,36,44,0.64);
+                // border-color: rgba(33,36,44,0.16) ;
+
+                // border-style: solid ;
+                // border-bottom-width: 1px ;
+                padding-bottom: 12px ;
+                // border-top-width: 1px;
+                padding-top: 32px ;
+                text-align: left;
+            }
+        }
+    }
+}.course-chlng-cont{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 32vh;
+    .set-cont{
+        text-align: left;
+        padding: 10px 0px 10px 0px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 400 ;
+        font-size: 1rem ;
+        line-height: 18px ;
+        color: #21242c ;
+    }
+}
