@@ -10,12 +10,11 @@ interface homecardprops {
   class: string;
   subject: string;
 }
-const HomeCard: React.FunctionComponent<homecardprops> = (
-  props
+const HomeCard: React.FunctionComponent = (
+  
 ): JSX.Element => {
 
   const count = useSelector((state: RootState) => state.subject)
-  const dispatch = useDispatch()
   return (
     <div className="home-card-cont">
       <div className="card-in-cont">

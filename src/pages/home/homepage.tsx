@@ -5,10 +5,9 @@ import data from '../../data-api/data.json'
 const Homepage: React.FunctionComponent = () => {
     return (
         <>
-            <HomeCard class={data.class}
-                subject={data.subject}
+            <HomeCard />
 
-            />
+            
             
             <TopicMainProgress chapter ={data.chapters} />
         </>
