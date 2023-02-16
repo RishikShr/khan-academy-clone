@@ -20,6 +20,63 @@
 				"id" : "abc"
 			}]
 			
+		},
+		{
+			"annotation" : "Chapter2",
+			"name" : "Relations and functions",
+			"points_to_earn" : 1000,
+			"id" : "klmansfkj",
+			"topics" : [{
+				"annotation" : "",
+				"name" : "Introduction to Relations and functions",
+				"points_to_earn" : 100,
+				"id" : "xyz"
+			},{
+				"annotation" : "",
+				"name" : "Application of Relations and functions",
+				
+				"points_to_earn" : 150,
+				"id" : "abc"
+			}]
+			
+		},
+		{
+			"annotation" : "Chapter3",
+			"name" : "Trigonometric functions",
+			"points_to_earn" : 1000,
+			"id" : "klmansfkj",
+			"topics" : [{
+				"annotation" : "",
+				"name" : "Introduction to Trigonometric functions",
+				"points_to_earn" : 100,
+				"id" : "xyz"
+			},{
+				"annotation" : "",
+				"name" : "Application of Trigonometric functions",
+				
+				"points_to_earn" : 150,
+				"id" : "abc"
+			}]
+			
+		},
+		{
+			"annotation" : "Chapter4",
+			"name" : "Complex numbers",
+			"points_to_earn" : 1000,
+			"id" : "klmansfkj",
+			"topics" : [{
+				"annotation" : "",
+				"name" : "Introduction to Complex numbers",
+				"points_to_earn" : 100,
+				"id" : "xyz"
+			},{
+				"annotation" : "",
+				"name" : "Application of Complex numbers",
+				
+				"points_to_earn" : 150,
+				"id" : "abc"
+			}]
+			
 		}
 	]
 }

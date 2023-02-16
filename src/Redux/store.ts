@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import subjectSlice from './features/counter/counterslice'
+import { chapterSlice, subjectSlice } from './features/counter/counterslice'
 
 export const store = configureStore({
   reducer: {
-    subject: subjectSlice,
+     subject: subjectSlice.reducer,
+     chapter: chapterSlice.reducer
   },
 })
 

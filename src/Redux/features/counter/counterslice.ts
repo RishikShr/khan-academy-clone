@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-
-export interface Subject {
+import { combineReducers } from '@reduxjs/toolkit';
+export interface  ISubject {
   class: string;
   subject: string;
   chapters: {
@@ -18,7 +18,14 @@ export interface Subject {
   }[];
 }
 
-const initialState: Subject = {
+export interface IChapterListType {
+  chapter:{
+  ChapterName: string;
+  ChapterProgress: number;
+  }[]
+}
+
+const initialState: ISubject = {
   class: "11",
   subject: "maths",
   chapters: [
@@ -46,19 +53,52 @@ const initialState: Subject = {
   ],
 };
 
+const initialStateChapter :IChapterListType=
+  {
+    "chapter":[
+    { "ChapterName": "set", "ChapterProgress": 0 },
+  
+      { "ChapterName": "Relations and functions", "ChapterProgress": 0 },
+      { "ChapterName": "Trigonometric functions", "ChapterProgress": 0 },
+      { "ChapterName": "Complex numbers", "ChapterProgress": 0 },
+      { "ChapterName": "Linear inequalities", "ChapterProgress": 0 },
+      { "ChapterName": "Permutations and combinations", "ChapterProgress": 0 }]
+    }
+
+
 export const subjectSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
-    setSubject: (state, action: PayloadAction<Subject>) => {
-      console.log(action.payload,"actionpayloas");
+    setSubject: (state, action: PayloadAction<ISubject>) => {
+      console.log(action.payload,"actionpayload");
       
       return action.payload;
     },
   },
+  
 });
 
 // Action creators are generated for each case reducer function
 export const { setSubject } = subjectSlice.actions;
 
-export default subjectSlice.reducer;
+ 
+
+export const chapterSlice = createSlice({
+  name: "chapter",
+  initialState:initialStateChapter,
+  reducers: {
+    setChapter: (state, action: PayloadAction<IChapterListType>) => {
+      console.log(action.payload,"actionpayload");
+      return action.payload;
+    },
+  },
+});
+
+export const { setChapter } = chapterSlice.actions;
+
+
+// export default combineReducers({
+//   setSubjects: subjectSlice.reducer,
+//   chapterSlices: chapterSlice.reducer
+// });

@@ -21,7 +21,7 @@ const App:React.FunctionComponent = ()=>{
   const fetchPatientSets = async () => {
     try {
       const result = await fetchApiData();
-      dispatch(setSubject(result));
+        dispatch(setSubject(result));
     } catch (err) {}
   };
 

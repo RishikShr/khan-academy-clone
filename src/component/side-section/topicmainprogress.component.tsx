@@ -4,7 +4,7 @@ import ProgressSidebar from './ProgressSidebar/ProgressSidebar.component'
 import TopicProgress from './TopicProgress/TopicProgress.component'
 import data from '../../data-api/data.json'
 
-interface chapterprops{
+interface Ichapterprops{
     chapter: {
         annotation: string;
         name: string;
@@ -18,7 +18,7 @@ interface chapterprops{
         }[];
     }[]
 }
-const TopicMainProgress: React.FunctionComponent<chapterprops>  = (props):JSX.Element => {
+const TopicMainProgress: React.FunctionComponent<Ichapterprops>  = (props):JSX.Element => {
   return (
     <div className='main-cont-topicmain'>
         <ProgressSidebar  />
