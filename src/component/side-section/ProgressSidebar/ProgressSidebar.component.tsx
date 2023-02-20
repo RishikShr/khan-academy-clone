@@ -1,7 +1,7 @@
 import { log } from "console";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ProgressSideBarApi } from "../../../data-api/api";
+import { ProgressSideBarApi } from "../../../api/api";
 import { setChapter } from "../../../Redux/features/counter/counterslice";
 import { RootState } from "../../../Redux/store";
 import Progressbar from "../../progressbar/progressbar.component";

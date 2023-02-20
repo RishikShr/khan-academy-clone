@@ -2,7 +2,7 @@ import React from 'react'
 import './topicmainprogress.style.scss'
 import ProgressSidebar from './ProgressSidebar/ProgressSidebar.component'
 import TopicProgress from './TopicProgress/TopicProgress.component'
-import data from '../../data-api/data.json'
+import data from '../../api/data.json'
 
 interface Ichapterprops{
     chapter: {

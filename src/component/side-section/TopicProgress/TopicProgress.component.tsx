@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchApiData } from "../../../data-api/api";
+import { fetchApiData } from "../../../api/api";
 import { setSubject } from "../../../Redux/features/counter/counterslice";
 import { RootState } from "../../../Redux/store";
 import ProgressBar from "../../progressbar/progressbar.component";
