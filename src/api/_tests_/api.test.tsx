@@ -87,7 +87,7 @@ const fetchmock = {
 }
 
 const progress_mock = {chapter: [
-    { ChapterName: "Mock_set", ChapterProgress: 0 },
+    { ChapterName: "set", ChapterProgress: 0 },
 
     { ChapterName: "Relations and functions", ChapterProgress: 0 },
     { ChapterName: "Trigonometric functions", ChapterProgress: 0 },
@@ -95,7 +95,15 @@ const progress_mock = {chapter: [
     { ChapterName: "Linear inequalities", ChapterProgress: 0 },
     { ChapterName: "Permutations and combinations", ChapterProgress: 0 },
   ],}
+  const progress = {chapter: [
+    { ChapterName: "set", ChapterProgress: 0 },
 
+    { ChapterName: "Relations and functions", ChapterProgress: 0 },
+    { ChapterName: "Trigonometric functions", ChapterProgress: 0 },
+    { ChapterName: "Complex numbers", ChapterProgress: 0 },
+    { ChapterName: "Linear inequalities", ChapterProgress: 0 },
+    { ChapterName: "Permutations and combinations", ChapterProgress: 0 },
+  ],}
 describe('fetchApiData',()=>{
     let mock: MockAdapter;
 
@@ -137,7 +145,7 @@ describe('fetchApiData',()=>{
 describe('ProgressSideBarApi', () => {
     it('should return the response data from the API when mock_Data is false', async () => {
       
-      const expectedData = progress_mock;
+      const expectedData = progress;
       const mockAxios = new MockAdapter(axios);
       mockAxios.onGet('/45faa5a6-cdd4-4404-a9db-081b626d70e3').reply(200, expectedData);
       

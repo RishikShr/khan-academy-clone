@@ -15,13 +15,36 @@ test("renders learn react link", () => {
   expect(wrapper).toBeDefined();
 });
 
-import MockAdapter from "axios-mock-adapter";
-import { cleanup } from "@testing-library/react";
 
-const mock = new MockAdapter(axiosInstance, { onNoMatch: "throwException" });
 
-beforeAll(() => {
-  mock.reset();
-});
 
-afterEach(cleanup);
+// describe("fetchPatientSets function", () => {
+//   test("should dispatch setSubject action with API response", async () => {
+//     const mockResult = { data: { subject: "test subject" } };
+//     const mockDispatch = jest.fn();
+//     jest.spyOn(global, "fetch").mockResolvedValue({
+//       json: jest.fn().mockResolvedValue(mockResult),
+//     });
+
+//     await fetchPatientSets()(mockDispatch);
+
+//     expect(mockDispatch).toHaveBeenCalledWith(setSubject(mockResult.data.subject));
+//     expect(global.fetch).toHaveBeenCalledWith("API_ENDPOINT_URL");
+//   });
+
+//   test("should log an error message if API call fails", async () => {
+//     const mockError = new Error("API error");
+//     const mockDispatch = jest.fn();
+//     jest.spyOn(global, "fetch").mockRejectedValue(mockError);
+//     jest.spyOn(console, "error").mockImplementation(() => {});
+
+//     await fetchPatientSets()(mockDispatch);
+
+//     expect(mockDispatch).not.toHaveBeenCalled();
+//     expect(console.error).toHaveBeenCalledWith("Error ", mockError);
+//   });
+// });
+
+
+
+

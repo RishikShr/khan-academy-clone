@@ -98,7 +98,3 @@ export const chapterSlice = createSlice({
 export const { setChapter } = chapterSlice.actions;
 
 
-// export default combineReducers({
-//   setSubjects: subjectSlice.reducer,
-//   chapterSlices: chapterSlice.reducer
-// });

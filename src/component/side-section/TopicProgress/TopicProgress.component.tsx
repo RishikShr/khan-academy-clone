@@ -55,25 +55,6 @@ const TopicProgress: React.FunctionComponent<chapterprops> = (
           </div>
         );
       })}
-
-      {/* {count.map((item)=>{
-          return  (<div className="card-cont" key={item.id}>
-          <div className="header">
-            <div className="chapter">{item.name}</div>
-            <div className="point-progress">0/{item.points_to_earn} Mastery points
-            <ProgressBar progressPercentage={10}/>
-            </div>
-          </div>
-         <div className="mid-section-card">
-            {item.topics.map((subitem)=>{
-              return (<div key={subitem.id}>{subitem.name}</div>)
-            })}
-          
-          
-         </div>
-        
-        </div>)
-      })} */}
     </div>
   );
 };
